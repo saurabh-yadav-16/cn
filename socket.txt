@@ -1,0 +1,55 @@
+SERVER.PY
+import socket
+s = socket.socket(socket.AF_INET , socket.SOCK_STREAM)
+s.bind((socket.gethostname(), 65535))
+s.listen(5)
+while True:
+ clientSocket, address = s.accept()
+ print(f"Connection established from address {address}")
+ clientSocket.send(bytes("Welcome to the server!","utf-8"))
+ clientSocket.close()
+
+CLIENT.PY
+import socket
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect((socket.gethostname(), 65535))
+message = s.recv(2048)
+print(f"Message recieved: {message}")
+
+
+
+The provided Python code consists of a simple client-server interaction using sockets. Here's an explanation of what each code is doing:
+
+**SERVER.PY:**
+
+1. `import socket`: Imports the Python socket library, which allows network communication.
+
+2. `s = socket.socket(socket.AF_INET , socket.SOCK_STREAM)`: Creates a socket object. `socket.AF_INET` indicates that it's an IPv4 socket, and `socket.SOCK_STREAM` indicates it's a TCP socket.
+
+3. `s.bind((socket.gethostname(), 65535))`: Binds the server socket to the host's IP address (retrieved using `socket.gethostname()`) and port 65535. This line prepares the server to listen for incoming connections on that IP and port.
+
+4. `s.listen(5)`: Starts listening for incoming connections, allowing up to 5 queued connection requests.
+
+5. `while True:`: Starts an infinite loop to continually listen for connections.
+
+6. `clientSocket, address = s.accept()`: Accepts a connection from a client. This line blocks until a client connects. It returns a new socket (`clientSocket`) for communication with the client and the client's address.
+
+7. `print(f"Connection established from address {address}")`: Prints a message indicating that a connection has been established, including the client's address.
+
+8. `clientSocket.send(bytes("Welcome to the server!","utf-8"))`: Sends the message "Welcome to the server!" to the connected client. The message is first converted to bytes with UTF-8 encoding.
+
+9. `clientSocket.close()`: Closes the client socket after sending the message, ending the communication with the client.
+
+**CLIENT.PY:**
+
+1. `import socket`: Imports the socket library.
+
+2. `s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)`: Creates a socket object, just like in the server code.
+
+3. `s.connect((socket.gethostname(), 65535))`: Initiates a connection to the server using the server's IP address (retrieved with `socket.gethostname()`) and port 65535.
+
+4. `message = s.recv(2048)`: Receives data (up to 2048 bytes) from the server. In this case, it's expecting the "Welcome to the server!" message sent by the server.
+
+5. `print(f"Message received: {message}")`: Prints the received message, which is "Welcome to the server!" in this example.
+
+In summary, the server code binds to an IP and port, listens for incoming connections, and sends a welcome message to clients upon connection. The client code connects to the server, receives the message, and prints it. These scripts demonstrate a simple client-server interaction over a TCP connection.
