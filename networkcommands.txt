@@ -1,0 +1,113 @@
+Certainly, here are the commands with proper usage format for Windows and Linux:
+
+**Windows:**
+
+- To view network configuration:
+  - IP Configuration: `ipconfig`
+  - Ping: `ping [hostname or IP]`
+  - Trace Route: `tracert [hostname or IP]`
+  - Network Statistics: `netstat`
+  - DNS Lookup: `nslookup [hostname]`
+  - ARP Table: `arp -a`
+  - Display Routing Table: `route print`
+  - Hostname: `hostname`
+  - Show network interfaces: `netsh interface show interface`
+
+**Linux:**
+
+- To view network configuration:
+  - IP Configuration: `ifconfig`
+  - Ping: `ping [hostname or IP]`
+  - Trace Route: `traceroute [hostname or IP]`
+  - Network Statistics: `netstat`
+  - DNS Lookup: `dig [hostname]`
+  - Routing Table: `route`
+  - Hostname: `hostname`
+  - ARP Table: `arp`
+  - MTR (My TraceRoute): `mtr [hostname or IP]`
+  - Wireless Configuration: `iwconfig`
+
+Please note that the Linux commands may require superuser (sudo) privileges for certain operations, and not all of them may be installed by default on all Linux distributions.
+
+
+Certainly, here's a brief explanation of the usage of each command for both Windows and Linux:
+
+**Windows:**
+
+1. **ipconfig (Windows)**:
+   - Usage: `ipconfig`
+   - Explanation: Displays the IP configuration of all network interfaces on your Windows system, including IP addresses, subnet masks, and more.
+
+2. **ping (Windows)**:
+   - Usage: `ping [hostname or IP]`
+   - Explanation: Sends ICMP echo requests to a host to check its network connectivity and measure response times.
+
+3. **tracert (Windows)**:
+   - Usage: `tracert [hostname or IP]`
+   - Explanation: Traces the route taken by packets to reach a destination host, showing each hop and response times.
+
+4. **netstat (Windows)**:
+   - Usage: `netstat`
+   - Explanation: Displays network statistics and active network connections, including listening ports, active connections, and more.
+
+5. **nslookup (Windows)**:
+   - Usage: `nslookup [hostname]`
+   - Explanation: Performs DNS (Domain Name System) lookups to resolve hostnames to IP addresses or vice versa.
+
+6. **arp -a (Windows)**:
+   - Usage: `arp -a`
+   - Explanation: Shows the ARP (Address Resolution Protocol) cache, which maps IP addresses to MAC (Media Access Control) addresses.
+
+7. **route print (Windows)**:
+   - Usage: `route print`
+   - Explanation: Displays the routing table, showing the routes packets will take when sent to different destinations.
+
+8. **hostname (Windows)**:
+   - Usage: `hostname`
+   - Explanation: Retrieves and displays the hostname of the Windows computer.
+
+9. **netsh interface show interface (Windows)**:
+   - Usage: `netsh interface show interface`
+   - Explanation: Lists all network interfaces on the system, showing their state and operational status.
+
+**Linux:**
+
+1. **ifconfig (Linux)**:
+   - Usage: `ifconfig`
+   - Explanation: Displays the network configuration of all network interfaces on your Linux system, including IP addresses, netmasks, and more.
+
+2. **ping (Linux)**:
+   - Usage: `ping [hostname or IP]`
+   - Explanation: Tests network connectivity by sending ICMP echo requests to a host and measuring response times.
+
+3. **traceroute (Linux)**:
+   - Usage: `traceroute [hostname or IP]`
+   - Explanation: Traces the route taken by packets to reach a destination host, showing each hop and response times.
+
+4. **netstat (Linux)**:
+   - Usage: `netstat`
+   - Explanation: Displays network statistics and active network connections, including listening ports, active connections, and more.
+
+5. **dig (Linux)**:
+   - Usage: `dig [hostname]`
+   - Explanation: Performs DNS queries to resolve hostnames to IP addresses or retrieve other DNS-related information.
+
+6. **route (Linux)**:
+   - Usage: `route`
+   - Explanation: Displays the routing table, showing the routes packets will take when sent to different destinations.
+
+7. **hostname (Linux)**:
+   - Usage: `hostname`
+   - Explanation: Retrieves and displays the hostname of the Linux computer.
+
+8. **arp (Linux)**:
+   - Usage: `arp`
+   - Explanation: Shows the ARP cache, mapping IP addresses to MAC addresses. Note that it may require superuser privileges.
+
+9. **mtr (Linux)**:
+   - Usage: `mtr [hostname or IP]`
+   - Explanation: Combines the functionality of ping and traceroute, providing continuous network path monitoring with response times.
+
+10. **iwconfig (Linux)**:
+    - Usage: `iwconfig`
+    - Explanation: Displays wireless network configuration information for wireless interfaces, such as signal strength, encryption status, and more.
