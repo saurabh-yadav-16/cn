@@ -1,0 +1,34 @@
+curl -O https://raw.githubusercontent.com/saurabh-yadav-16/cn/main/exp5.pkt 
+
+Name	
+.git/		
+ns/		
+CRC1.java	
+exp10.txt	
+exp5.pkt	
+exp6.pkt	
+exp7.pkt	
+networkcommands.txt	
+out.nam	
+README.md	
+RedundancyCheck.java	
+
+
+/ns
+ns-allinone-2.35/
+Al-stop-n-wait.nam
+A1-stop-n-wait.tcl
+A2-stop-n-wait-loss.tcl
+A3-sliding-window.tcl
+B3-sliding-window.tcl
+B4-sliding-window-loss.tcl
+examplela.tcl
+examplelb.tcl
+example2.tcl
+example3.tcl
+example4.tcl
+example5.tcl
+template.tcl
+test.tcl
+wired I .nam
+wired 1 .tr
